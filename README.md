@@ -1,3 +1,3 @@
-# gcp-ml-template
+# ml-project-template
 
-Replace the content of this file with a description of your project.
+Template repo meant to be used as a boilerplate for new machine learning projects.
