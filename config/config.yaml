@@ -1,0 +1,7 @@
+model: ???
+datamodule: ???
+trainer: ???
+
+hydra:
+  run:
+    dir: logs/${now:%Y%m%d_%H%M%S}
