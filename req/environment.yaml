@@ -1,0 +1,13 @@
+name: new_ml_project
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python==3.8
+  - matplotlib
+  - opencv
+  - ipykernel
+  - pytorch-lightning
+  - lightning-bolts
+  - hydra
+  - black
