@@ -1,7 +1,8 @@
-name: new_ml_project
+name: new_project
 channels:
-  - conda-forge
   - pytorch
+  - conda-forge
+  - defaults
 dependencies:
   - python==3.8
   - matplotlib
