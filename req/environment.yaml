@@ -12,3 +12,9 @@ dependencies:
   - lightning-bolts
   - hydra
   - black
+  - mypy
+  - ca-certificates
+  - certifi
+  - openssl
+  - isort
+  - flake8
