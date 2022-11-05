@@ -10,9 +10,17 @@ run:
 	docker run $(IMAGE_URI)
 push:
 	docker push $(IMAGE_URI)
+check:
+	flake8 .
+	mypy .
+format:
+	black .
+	isort .
 env-create:
-	mamba env create --name $(PROJECT_ID) --file req/environment.yaml && env-save
+	mamba create --name $(PROJECT_ID) python=3.8
 env-install:
 	mamba env update --file req/environment.yaml
+env-activate:
+	conda activate $(PROJECT_ID)
 env-save:
-	mamba env export --from-history | grep -v "^prefix: " > req/environment.yaml
+	conda env export --from-history | grep -v "^prefix: " > req/environment.yaml
